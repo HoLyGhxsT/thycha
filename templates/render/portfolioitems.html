@@ -1,0 +1,55 @@
+
+<div class="container-fluid" data-aos="fade-up">
+    
+    <div class="row g-0">
+        
+        <!-- Images with description example -->
+        <!-- <section class="section pair">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+        {% for i in itemlist %}
+        <div class="col-lg-3 col-md-4 filter print">
+            <div class="gallery-item">
+                <ul class="box-container">
+
+                    <li class="box">
+                        <div class="inner">
+                            <a href="/assets/img/gallery/Portfolio 800x600-01.jpg" class="glightbox2"
+                                data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                <img src="/assets/img/gallery/Portfolio 800x600-01.jpg" alt="image" />
+                            </a>
+
+                            <div class="glightbox-desc custom-desc1">
+                                <p>
+                                    You can set the position of the description in different ways for example
+                                    <strong style="text-decoration: underline">top, bottom, left or
+                                        right</strong>
+                                </p>
+                                <p>
+                                    <a href="http://google.com" target="_blank"
+                                        style="text-decoration: underline; font-weight: bold">Example Google
+                                        link</a>
+                                    ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                    faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                    vehicula eros ultrices lacinia.
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                </p>
+                                <a href="item1.html" class="btn btn-dark mt-5" role="button">
+                                    <p class="text-light">Learn More</p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div>

@@ -1,0 +1,91 @@
+{% extends 'base.html' %}{% load static %}
+{% block title %} Thycha Creatives | Portfolio{% endblock %}
+{% block pagecontent %}
+
+
+
+<!-- ======= Gallery Section ======= -->
+<section id="hero" class="gallery " style="padding-top: 200px;">
+
+    <div class="container" data-aos="fade-up">
+        <div class="text-center mx-auto wow fadeInUp " data-wow-delay="0.1s">
+            <h1 class="text-uppercase " style="font-size: 40px;">Portfolio</h1>
+        </div>
+        <div class="text-center align-items-center">
+
+            <a class="btn filter-button " data-filter="all"><span class="material-symbols-outlined p-3">
+                    apps <h6 h4>All</h6></a>
+            </span>
+            <a class="btn filter-button " data-filter="print"><span class="material-symbols-outlined p-3">
+                    print<h6 h4>print</h6></a>
+            </span>
+            <a class="btn filter-button " data-filter="packaging"><span class="material-symbols-outlined p-3">
+                    package<h6 h4>Packaging</h6></a>
+            </span>
+            <a class="btn filter-button " data-filter="illust"><span class="material-symbols-outlined p-3">
+                    draw<h6 h4>Illustration</h6></a>
+            </span>
+            <a class="btn filter-button " data-filter="digi"><span class="material-symbols-outlined p-3">
+                    auto_awesome_mosaic<h6 h4>Digital</h6></a>
+            </span>
+            <a class="btn filter-button " data-filter="brands"><span class="material-symbols-outlined p-3">
+                    glyphs<h6 h4>Branding</h6></a>
+            </span>
+        </div>
+    </div>
+    <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row g-0">
+
+            <!-- Images with description example -->
+            <!-- <section class="section pair">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+
+            {% for i in itemlist %}
+            <div class="col-lg-3 col-md-4 filter {{i.category}}">
+                <div class="gallery-item">
+                    <ul class="box-container">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{{i.thumbnailimage.url}}" class="glightbox2"
+                                    data-glightbox="title: {{image.name}}; description: .custom-desc1; descPosition: right;">
+                                    <img src="{{i.thumbnailimage.url}}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        <!-- You can set the position of the description in different ways for example -->
+                                        <strong style="text-decoration: underline">{{i.category}}</strong>
+                                    </p>
+                                    <p>
+                                       {{i.desc}}
+                                       <br>
+                                        <a href="{% url 'home:more'%}?item={{i.id}}" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">More</a>
+                                    </p>
+                                    <!-- <a href="item1.html" class="btn btn-dark mt-5" role="button">
+                                        <p class="text-light">Learn More</p>
+                                    </a> -->
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+
+
+</section>
+<!-- End Gallery Section -->
+
+{% endblock pagecontent %}

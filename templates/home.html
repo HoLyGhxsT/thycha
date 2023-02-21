@@ -1,0 +1,939 @@
+{% extends 'base.html' %}
+{% block title %} Thycha Creatives {% endblock %}
+{% block pagecontent %}
+{% load static %}
+
+
+<div id="particles-js">
+    <div class="count-particles"> <span class="js-count-particles">--</span></div>
+    <div class="welcome">
+        <div class="row align-items-center ml-5 " data-aos="fade-up" data-aos-delay="100">
+
+            <h1 class="Center">Brand Your Business Now</h1>
+            <h2 class="Center">Brand your brands to the Extent that, they become a Superbrand</h2>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<!-- ======= Gallery Section ======= -->
+<section id="hero" class="gallery">
+
+    <div class="container" data-aos="fade-up">
+        <div class="text-center align-items-center">
+            <h2 h4>WORK</h2>
+            <a class="btn filter-button " data-filter="all"><span class="material-symbols-outlined p-3">
+                    apps <h6 h4>All</h6></a>
+            </span>
+            <a class="btn filter-button " data-filter="print"><span class="material-symbols-outlined p-3">
+                    print<h6 h4>print</h6></a>
+            </span>
+            <a class="btn filter-button " data-filter="packaging"><span class="material-symbols-outlined p-3">
+                    package<h6 h4>Packaging</h6></a>
+            </span>
+            <a class="btn filter-button " data-filter="illust"><span class="material-symbols-outlined p-3">
+                    draw<h6 h4>Illustration</h6></a>
+            </span>
+            <a class="btn filter-button " data-filter="digi"><span class="material-symbols-outlined p-3">
+                    auto_awesome_mosaic<h6 h4>Digital</h6></a>
+            </span>
+            <a class="btn filter-button " data-filter="brands"><span class="material-symbols-outlined p-3">
+                    glyphs<h6 h4>Branding</h6></a>
+            </span>
+        </div>
+    </div>
+
+    <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row g-0">
+
+            <!-- Images with description example -->
+            <!-- <section class="section pair">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+
+            <div class="col-lg-3 col-md-4 filter print">
+                <div class="gallery-item">
+                    <ul class="box-container">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-01.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-01.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="{% static 'doc/Crispikart BrandBook.pdf" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter packaging">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-11.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-11.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter illust">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-02.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-02.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter digi">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-12.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-12.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter brand">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-03.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-03.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter digi">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-13.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-13.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter illust">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-04.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-04.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter print">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-14.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-14.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter illust">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-05.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-05.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter brand">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-15.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-15.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter illust">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-06.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-06.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter brand">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-16.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-16.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 filter illust">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-07.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-07.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter brand">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-10.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-10.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter illust">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-08.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-08.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 filter brand">
+                <div class="gallery-item">
+                    <ul class="box-container ">
+
+                        <li class="box">
+                            <div class="inner">
+                                <a href="{% static 'img/gallery/Portfolio 800x600-09.jpg' %}" class="glightbox2"
+                                    data-glightbox="title: Description Right; description: .custom-desc1; descPosition: right;">
+                                    <img src="{% static 'img/gallery/Portfolio 800x600-09.jpg' %}" alt="image" />
+                                </a>
+
+                                <div class="glightbox-desc custom-desc1">
+                                    <p>
+                                        You can set the position of the description in different ways for example
+                                        <strong style="text-decoration: underline">top, bottom, left or
+                                            right</strong>
+                                    </p>
+                                    <p>
+                                        <a href="http://google.com" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">Example Google
+                                            link</a>
+                                        ipsum vehicula eros ultrices lacinia Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia Curae Duis quis ipsum
+                                        vehicula eros ultrices lacinia.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</section>
+<!-- End Gallery Section -->
+
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us">
+            <div class="container-xxl py-5 " data-aos="fade-up" data-aos-delay="100">
+                <h1 class=" position-relative text-center p-5 ">CAPABILITIES</h1>
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp " data-wow-delay="0.1s">
+                            <div class="service-item position-relative overflow-hidden  d-flex h-100 p-5 ps-0">
+                                <div class="ps-4 ">
+                                    <h4 class="text-uppercase mb-3 ">BRANDING</h4>
+                                    <p class="capabilities ">Making the key to your success is our motive. We add
+                                        creative secret ingredients to your branding to make it unique and stand out
+                                        from the ordinary.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="service-item position-relative overflow-hidden  d-flex h-100 p-5 ps-0">
+                                <div class="ps-4 ">
+                                    <h4 class="text-uppercase mb-3 ">Creative designs </h4>
+                                    <p class="capabilities">We give utmost importance and uniqueness to each design
+                                        to carve out its niche and speak to its target audience in a way that, it
+                                        will change into a sensation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="service-item position-relative overflow-hidden  d-flex h-100 p-5 ps-0">
+                                <div class="ps-4 ">
+                                    <h4 class="text-uppercase mb-3 ">Social media marketing</h4>
+                                    <p class="capabilities">We leverage the limitless power of social media
+                                        positively to ensure the growth and updation of our clients.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item position-relative overflow-hidden d-flex h-100 p-5 ps-0">
+                                <div class="ps-4 ">
+                                    <h4 class="text-uppercase ">Ad campaigns </h4>
+                                    <p class="capabilities">We are ready to pave the way for business with
+                                        enterprising thoughts and are assuring you that you will be able to achieve
+                                        the epitome of your progression.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="service-item position-relative overflow-hidden  d-flex h-100 p-5 ps-0">
+                                <div class="ps-4 ">
+                                    <h4 class="text-uppercase ">Web design
+                                    </h4>
+                                    <p class="capabilities">Creating and developing accurate design and content to
+                                        assure the credibility of our client is our focus. We offer the user
+                                        convenience and the latest updates with valuable content so that, they can
+                                        elevate their growth.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="service-item position-relative overflow-hidden  d-flex h-100 p-5 ps-0">
+                                <div class="ps-4 ">
+                                    <h4 class="text-uppercase ">Packaging </h4>
+                                    <p class="capabilities">We are ensured to make the best impression on our
+                                        client's customers so that their marketing should stand out of the ordinary.
+                                        We can shape the way companies package their products. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- End Why Us Section -->
+
+
+
+        <!-- ======= Specials Section ======= -->
+        <section id="specials" class="specials">
+            <div class="container" data-aos="fade-up">
+
+                <!-- Testimonial Start -->
+                <div id="specials" class="container-xxl py-5">
+                    <div class="container content">
+                        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s"
+                            style="max-width: 600px;">
+                            <h1 class="text-uppercase ">about</h1>
+                        </div>
+                        <div class=" wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="testimonial-item text-center">
+                                <h5>Creating innovative ideas and affixing wings to it is our metier.</h5>
+                                <br>
+                                <p><span class="fs-6 ">We are an advertising agency which creates
+                                        social media content, digital marketing, branding and many more services as
+                                        per the customized demand. Our expertise and values will reflect in our
+                                        works that drive positive changes, which you all looking for.</span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Testimonial End -->
+
+
+            </div>
+        </section>
+        <!-- End Specials Section -->
+
+
+
+
+
+
+        <!-- ======= Chefs Section ======= -->
+        <!-- <section id="chefs" class="chefs">
+            <div class="container" data-aos="fade-up">
+                <div class="text-center mx-auto mb-5 wow fadeInUp tex" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="text-uppercase">Team</h1>
+                    <p>Our Team Members</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                          <a href="">  <img src="assets/img/chefs/chefs-1.jpg' %}" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Walter White</h4>
+                                    <span>Master Chef</span>
+                                </div>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                            <a href="">    <img src="assets/img/chefs/chefs-2.jpg' %}" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Sarah Jhonson</h4>
+                                    <span>Patissier</span>
+                                </div>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                            <a href="">    <img src="assets/img/chefs/chefs-3.jpg' %}" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>William Anderson</h4>
+                                    <span>Cook</span>
+                                </div>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <!-- End Chefs Section -->
+
+
+
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+
+                <div class="text-center justify-content-center fw-100 pt-5 ">
+                    <h1 h4>OUR CLIENTS</h1>
+                    <!-- <p h4>Contact Us</p> -->
+                </div>
+            </div>
+            <!-- <div class="container" data-aos="fade-up">
+                    <div class="row mt-5">
+                        <div class="col-lg-4">
+                            <div class="info">
+                                <div class="address">
+                                    <i class="icon-map-marker"></i>
+                                    <h4 class="one">Location:</h4>
+                                    <p class="eight">#1102, Level 1, HiLITE Business Park, <br> Kozhikode, Kerala, India
+                                        - 673014 </p>
+                                </div>
+                                <div class="open-hours">
+                                    <i class="icon-time"></i>
+                                    <h4 class="one">Open Hours:</h4>
+                                    <p class="eight">
+                                        Monday-Saturday:<br> 11:00 AM - 2300 PM
+                                    </p>
+                                </div>
+                                <div class="email">
+                                    <i class="icon-envelope-alt"></i>
+                                    <h4 class="one">Email:</h4>
+                                    <p class="eight">
+                                        thychacreatives@gmail.com</p>
+                                </div>
+                                <div class="phone">
+                                    <i class="icon-phone"></i>
+                                    <h4 class="one">Call:</h4>
+                                    <p class="eight">+1 5589 55488 55s</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 mt-5 mt-lg-0">
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form ">
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <input type="text" name="name" class="form-control " id="name"
+                                            placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                                        <input type="email" class="form-control " name="email" id="email"
+                                            placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control " name="subject" id="subject"
+                                        placeholder="Subject" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea class="form-control " name="message" rows="8" placeholder="Message"
+                                        required></textarea>
+                                </div>
+                                <div class="my-3">
+                                    <div class="loading ">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message ">Your message has been sent. Thank you!</div>
+                                </div>
+                                <div class="text-center "><button type="submit">Send Message</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div> -->
+        </section>
+        <!-- End Contact Section -->
+        <!-- start client gallery Section -->
+
+
+        <div class="container ">
+
+            <section class="customer-logos slider">
+                <div class="slide"><img src="{% static 'img/clients/client-1.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-2.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-3.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-4.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-5.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-6.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-7.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-8.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-9.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-10.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-11.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-12.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-13.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-14.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-15.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-16.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-17.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-18.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-19.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-20.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-21.png' %}"></div>
+                <div class="slide"><img src="{% static 'img/clients/client-22.png' %}"></div>
+
+            </section>
+        </div>
+    </section>
+    <!-- End client gallery Section -->
+    <!-- End About Section -->
+</main>
+<!-- End #main -->
+
+<!-- ======= Footer ======= -->
+
+<!-- End Footer -->
+
+
+
+{% endblock pagecontent %}

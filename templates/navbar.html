@@ -1,0 +1,37 @@
+
+<header id="header" class="fixed-top d-flex align-items-center"> {% load static %}
+    <div class="container-fluid  d-flex align-items-center justify-content-lg-between">
+        <a href="{% url 'home:home'%}" class="logo me-auto me-lg-0"><img src="{% static 'img/logo/Thycha Logo White.png' %}" alt=""
+                class="img-fluid"></a>
+
+        <!-- <nav id="navbar" class="navbar order-last order-lg-0 ">
+                <ul>
+                    <li><a class="nav-link scrollto active  " href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto  " href="About.html">About</a></li>
+                    <li><a class="nav-link scrollto  " href="contact.html">Contact</a></li>
+                </ul>
+                <i class="icon-reorder mobile-nav-toggle p-2"></i>
+            </nav> -->
+
+        <nav>
+
+            <ul>
+                <li><a class="nav-link scrollto active  " href="{% url 'home:home'%}">Home</a></li>
+                <li><a class="nav-link scrollto  " href="{% url 'home:about'%}">About</a></li>
+                <li><a class="nav-link scrollto  " href="{% url 'home:team'%}">Team</a></li>
+                <li><a class="nav-link scrollto  " href="{% url 'home:portfolio'%}">Portfolio</a></li>
+                <li><a class="nav-link scrollto  " href="{% url 'home:contact-us'%}">Contact</a></li>
+            </ul>
+            <div class="menu-bars">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- .navbar -->
+
+
+    </div>
+</header>
+<!-- End Header -->
