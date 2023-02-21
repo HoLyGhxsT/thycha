@@ -13,22 +13,22 @@
         </div>
         <div class="text-center align-items-center">
 
-            <a class="btn filter-button " data-filter="all"><span class="material-symbols-outlined p-3">
+            <a class="btn filter-button " data-filter="All"><span class="material-symbols-outlined p-3">
                     apps <h6 h4>All</h6></a>
             </span>
-            <a class="btn filter-button " data-filter="print"><span class="material-symbols-outlined p-3">
+            <a class="btn filter-button " data-filter="Print"><span class="material-symbols-outlined p-3">
                     print<h6 h4>print</h6></a>
             </span>
-            <a class="btn filter-button " data-filter="packaging"><span class="material-symbols-outlined p-3">
+            <a class="btn filter-button " data-filter="Packaging"><span class="material-symbols-outlined p-3">
                     package<h6 h4>Packaging</h6></a>
             </span>
-            <a class="btn filter-button " data-filter="illust"><span class="material-symbols-outlined p-3">
+            <a class="btn filter-button " data-filter="Illustration"><span class="material-symbols-outlined p-3">
                     draw<h6 h4>Illustration</h6></a>
             </span>
-            <a class="btn filter-button " data-filter="digi"><span class="material-symbols-outlined p-3">
+            <a class="btn filter-button " data-filter="Digital-"><span class="material-symbols-outlined p-3">
                     auto_awesome_mosaic<h6 h4>Digital</h6></a>
             </span>
-            <a class="btn filter-button " data-filter="brands"><span class="material-symbols-outlined p-3">
+            <a class="btn filter-button " data-filter="Branding"><span class="material-symbols-outlined p-3">
                     glyphs<h6 h4>Branding</h6></a>
             </span>
         </div>
@@ -55,18 +55,18 @@
                         <li class="box">
                             <div class="inner">
                                 <a href="{{i.thumbnailimage.url}}" class="glightbox2"
-                                    data-glightbox="title: {{image.name}}; description: .custom-desc1; descPosition: right;">
+                                    data-glightbox="title: {{i.name}}; description: .custom-desc{{i.id}}; descPosition: right;">
                                     <img src="{{i.thumbnailimage.url}}" alt="image" />
                                 </a>
 
-                                <div class="glightbox-desc custom-desc1">
+                                <div class="glightbox-desc custom-desc{{i.id}}">
                                     <p>
                                         <!-- You can set the position of the description in different ways for example -->
                                         <strong style="text-decoration: underline">{{i.category}}</strong>
                                     </p>
                                     <p>
-                                       {{i.desc}}
-                                       <br>
+                                        {{i.desc|linebreaks}}
+                                        <br>
                                         <a href="{% url 'home:more'%}?item={{i.id}}" target="_blank"
                                             style="text-decoration: underline; font-weight: bold">More</a>
                                     </p>
@@ -87,5 +87,33 @@
 
 </section>
 <!-- End Gallery Section -->
+<script>
+    $(document).ready(function () {
+  $(".filter-button").click(function () {
+    var value = $(this).attr("data-filter");
+    // console.log("click");
+    // console.log(value);
+    if (value == "All") {
+      $(".filter").removeClass("disable");
+      $(".filter").show("1000");
+    } else {
+      //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+      //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+      $(".filter").removeClass("disable");
+      $(".filter")
+        .not("." + value)
+        .addClass("disable");
+      $(".filter")
+        .filter("." + value)
+        .show("3000");
+    }
+  });
 
+  if ($(".filter-button").removeClass("active")) {
+    $(this).removeClass("active");
+    $(this).removeClass("disable");
+  }
+  $(this).addClass("active");
+});
+</script>
 {% endblock pagecontent %}

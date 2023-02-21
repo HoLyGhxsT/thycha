@@ -377,32 +377,32 @@ new Swiper(".portfolio-details-slider", {
   },
 });
 
-$(document).ready(function () {
-  $(".filter-button").click(function () {
-    var value = $(this).attr("data-filter");
-    console.log("click");
-    if (value == "all") {
-      $(".filter").removeClass("disable");
-      $(".filter").show("1000");
-    } else {
-      //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-      //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-      $(".filter").removeClass("disable");
-      $(".filter")
-        .not("." + value)
-        .addClass("disable");
-      $(".filter")
-        .filter("." + value)
-        .show("3000");
-    }
-  });
+// $(document).ready(function () {
+//   $(".filter-button").click(function () {
+//     var value = $(this).attr("data-filter");
+//     console.log("click");
+//     if (value == "All") {
+//       $(".filter").removeClass("disable");
+//       $(".filter").show("1000");
+//     } else {
+//       //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//       //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+//       $(".filter").removeClass("disable");
+//       $(".filter")
+//         .not("." + value)
+//         .addClass("disable");
+//       $(".filter")
+//         .filter("." + value)
+//         .show("3000");
+//     }
+//   });
 
-  if ($(".filter-button").removeClass("active")) {
-    $(this).removeClass("active");
-    $(this).removeClass("disable");
-  }
-  $(this).addClass("active");
-});
+//   if ($(".filter-button").removeClass("active")) {
+//     $(this).removeClass("active");
+//     $(this).removeClass("disable");
+//   }
+//   $(this).addClass("active");
+// });
 
 
 //  Mobile-navbar -Hamburger menu

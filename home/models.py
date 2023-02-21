@@ -14,7 +14,7 @@ class PortfolioMaster(models.Model):
     id = models.CharField(primary_key=True,max_length=50)
     # id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
-    category = models.CharField(max_length=15,default='all',choices=[('all','all'),('print','print'),('packaging','packaging'),('illust','illust'),('digi','digi'),('brands','brands')])
+    category = models.CharField(max_length=15,default='all',choices=[('All','All'),('Print','Print'),('Packaging','Packaging'),('Illustration','Illustration'),('Digital','Digital'),('Branding','Branding')])
     desc = models.TextField(null=True,blank=True)
     thumbnailimage = models.ImageField(upload_to ='uploads/',validators=[validate_image], blank=True, null=True,help_text='Maximum file size allowed is 4Mb')
     image1 = models.ImageField(upload_to ='uploads/',validators=[validate_image], blank=True, null=True,help_text='Maximum file size allowed is 4Mb')
