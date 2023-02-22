@@ -495,8 +495,8 @@ iframe.wait-autoplay {
 
 .glightbox-clean .gslide-title {
     font-size: 1em;
-    font-weight: 400;
-    font-family: arial;
+    font-weight: 900;
+   font-family: "Ubuntu", sans-serif;
     color: #000;
     margin-bottom: 19px;
     line-height: 1.4em
@@ -505,7 +505,7 @@ iframe.wait-autoplay {
 .glightbox-clean .gslide-desc {
     font-size: .86em;
     margin-bottom: 0;
-    font-family: arial;
+   font-family: "Ubuntu", sans-serif;
     line-height: 1.4em
 }
 

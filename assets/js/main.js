@@ -377,41 +377,57 @@ new Swiper(".portfolio-details-slider", {
   },
 });
 
-// $(document).ready(function () {
-//   $(".filter-button").click(function () {
-//     var value = $(this).attr("data-filter");
-//     console.log("click");
-//     if (value == "All") {
-//       $(".filter").removeClass("disable");
-//       $(".filter").show("1000");
-//     } else {
-//       //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//       //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-//       $(".filter").removeClass("disable");
-//       $(".filter")
-//         .not("." + value)
-//         .addClass("disable");
-//       $(".filter")
-//         .filter("." + value)
-//         .show("3000");
-//     }
-//   });
+$(document).ready(function () {
+  $(".filter-button").click(function () {
+    var value = $(this).attr("data-filter");
+    console.log("click");
+    if (value == "All") {
+      $(".filter").removeClass("disable");
+      $(".filter").show("1000");
+    } else {
+      //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+      //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+      $(".filter").removeClass("disable");
+      $(".filter")
+        .not("." + value)
+        .addClass("disable");
+      $(".filter")
+        .filter("." + value)
+        .show("3000");
+    }
+  });
 
-//   if ($(".filter-button").removeClass("active")) {
-//     $(this).removeClass("active");
-//     $(this).removeClass("disable");
-//   }
-//   $(this).addClass("active");
-// });
+  if ($(".filter-button").removeClass("active")) {
+    $(this).removeClass("active");
+    $(this).removeClass("disable");
+  }
+  $(this).addClass("active");
+});
 
 
 //  Mobile-navbar -Hamburger menu
 
 
-const menuToggle= document.querySelector(".menu-bars");
+const menuToggle = document.querySelector(".menu-bars");
 const nav = document.querySelector("nav ul");
 
 
 menuToggle.addEventListener("click", () => {
   nav.classList.toggle("slide");
+});
+
+//whatsapp
+
+$(function () {
+  $('#WAButton').floatingWhatsApp({
+    phone: '8089265880', //WhatsApp Business phone number International format-
+    //Get it with Toky at https://toky.co/en/features/whatsapp.
+    // headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+    // popupMessage: 'Hello, how can we help you?', //Popup Message
+    // showPopup: true, //Enables popup display
+    buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
+    //headerColor: 'crimson', //Custom header color
+    //backgroundColor: 'crimson', //Custom background button color
+    position: "left"
   });
+});

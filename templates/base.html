@@ -11,8 +11,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="img/logo/logo-dark.png" rel="icon">
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="{% static 'img/logo/logo-dark.png' %}" rel="icon">
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
 
@@ -22,13 +22,15 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,200" />
 
-
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <!-- Vendor CSS Files -->
     <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
     <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <!-- <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet"> -->
     <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
     <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
     <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
@@ -38,31 +40,37 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
 
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!--Floating WhatsApp css-->
+    <link rel="stylesheet"
+        href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+    <!--Floating WhatsApp javascript-->
+    <script type="text/javascript"
+        src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
     {% block extra_style %}
-  
+
     {% endblock extra_style %}
 </head>
 
 <body>
 
     {% include 'navbar.html' %}
-        
+
     {% block pagecontent %}
-          
+
     {% endblock pagecontent %}
 
     {% include 'footer.html' %}
 
 
     <div id="preloader"></div>
+    <a href="#">
+        <div id="WAButton"></div>
+    </a>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
         <i class="icon-double-angle-up"></i>
     </a>
+    <!-- <div class="scroll-to-top scroll-to-target thm-bg-clr" data-target="html"><span class="fa fa-angle-up"></span></div> -->
 
     <!-- Vendor JS Files -->
     <script src="{% static 'vendor/aos/aos.js' %}"></script>
@@ -144,34 +152,32 @@
         exampleApi.open(); */
     </script>
     <script>$(document).ready(function () {
-        $(".filter-button").click(function () {
-          var value = $(this).attr("data-filter");
-        //   console.log("click");
-          if (value == "All") {
-            $(".filter").removeClass("disable");
-            $(".filter").show("1000");
-          } else {
-            //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-            //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").removeClass("disable");
-            $(".filter")
-              .not("." + value)
-              .addClass("disable");
-            $(".filter")
-              .filter("." + value)
-              .show("3000");
-          }
+            $(".filter-button").click(function () {
+                var value = $(this).attr("data-filter");
+                //   console.log("click");
+                if (value == "All") {
+                    $(".filter").removeClass("disable");
+                    $(".filter").show("1000");
+                } else {
+                    //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                    //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                    $(".filter").removeClass("disable");
+                    $(".filter")
+                        .not("." + value)
+                        .addClass("disable");
+                    $(".filter")
+                        .filter("." + value)
+                        .show("3000");
+                }
+            });
+
+            if ($(".filter-button").removeClass("active")) {
+                $(this).removeClass("active");
+                $(this).removeClass("disable");
+            }
+            $(this).addClass("active");
         });
-      
-        if ($(".filter-button").removeClass("active")) {
-          $(this).removeClass("active");
-          $(this).removeClass("disable");
-        }
-        $(this).addClass("active");
-      });</script>
-{% block extra_script %}
-        
-{% endblock extra_script %}
+    </script>
 </body>
 
 </html>

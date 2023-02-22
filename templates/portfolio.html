@@ -67,12 +67,15 @@
                                     <p>
                                         {{i.desc|linebreaks}}
                                         <br>
-                                        <a href="{% url 'home:more'%}?item={{i.id}}" target="_blank"
-                                            style="text-decoration: underline; font-weight: bold">More</a>
+                                        <!-- <a href="{% url 'home:more'%}?item={{i.id}}" target="_blank"
+                                            style="text-decoration: underline; font-weight: bold">More</a> -->
+                                        <!-- <div class="learnmore">
+                                        <a href="{% url 'home:more'%}?item={{i.id}}" target="_blank" class="btn btn-dark mt-5" role="button">View More </a>
+                                    </div> -->
                                     </p>
-                                    <!-- <a href="item1.html" class="btn btn-dark mt-5" role="button">
-                                        <p class="text-light">Learn More</p>
-                                    </a> -->
+                                    <a href="{% url 'home:more'%}?item={{i.id}}" class="btn btn-dark mt-5" role="button">
+                                        <p class="text-light">View More</p>
+                                    </a>
                                 </div>
                             </div>
                         </li>
@@ -87,7 +90,7 @@
 
 </section>
 <!-- End Gallery Section -->
-<script>
+<!-- <script>
     $(document).ready(function () {
   $(".filter-button").click(function () {
     var value = $(this).attr("data-filter");
@@ -115,5 +118,5 @@
   }
   $(this).addClass("active");
 });
-</script>
+</script> -->
 {% endblock pagecontent %}
