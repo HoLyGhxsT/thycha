@@ -420,7 +420,7 @@ menuToggle.addEventListener("click", () => {
 
 $(function () {
   $('#WAButton').floatingWhatsApp({
-    phone: '8089265880', //WhatsApp Business phone number International format-
+    phone: '+918089265880', //WhatsApp Business phone number International format-
     //Get it with Toky at https://toky.co/en/features/whatsapp.
     // headerTitle: 'Chat with us on WhatsApp!', //Popup Title
     // popupMessage: 'Hello, how can we help you?', //Popup Message

@@ -7,15 +7,17 @@
                 <div class="col-lg-5 col-md-4">
                     <div class="footer-info">
                         <!-- <h3>Thycha Creatives</h3> -->
-                        <img src="{% static 'img/logo/Thycha-Logo.png' %}" alt="">
+                        <div class="logoimg">
+                            <img src="{% static 'img/logo/Thycha-Logo.png' %}" alt="">
+                        </div>
                         <p>
                         <div class="address pl-5">
                             <i class="icon-map-marker pr-1"></i>
-                            Location: <br> <br> CORPORATE ADDRESS
-                            <p class="pt-1">CP-11/83 Kadiyangad palam.Changaroth,Kozhikode , <br> Kerala ,India
+                            Location: <br> <br><span style="font-weight: 900;">CORPORATE ADDRESS</span>
+                            <p class="pt-1">CP-11/83 Kadiyangad palam.Changaroth, <br>Kozhikode , Kerala ,India
                                 -673525</p>
 
-                            <br> WORKING ADDRESS
+                            <br> <span style="font-weight: 900;">WORKING ADDRESS</span>
 
                             <p class="pt-1">#1102, Level 1, HILITE Business Park, <br> Kozhikode, Kerala, India
                                 - 673014 </p>
@@ -25,7 +27,7 @@
                             <i class="icon-time pr-1"></i>
                             Open Hours:
                             <p>
-                                Monday-Sunday:<br> 24 Hours
+                                Monday-Sunday:<br> 9.00 am to 9.00 pm
                             </p>
                         </div>
                         <br>
@@ -41,7 +43,6 @@
                         <li><i class="icon-angle-right"></i><a h4 href="{% url 'home:home'%}">Home</a></li>
                         <li><i class="icon-angle-right"></i> <a h4 href="{% url 'home:about'%}">About us</a></li>
                         <li><i class="icon-angle-right"></i> <a h4 href="{% url 'home:team'%}">Team</a></li>
-
                         <!--  <li><i class="icon-angle-right"></i> <a h4 href="#">Terms of service</a></li>
                         <li><i class="icon-angle-right"></i> <a h4 href="#">Privacy policy</a></li> -->
                     </ul>
@@ -71,9 +72,9 @@
 
                         </div>
                         <div class="social-links mt-3">
-                            <a href="#" class="facebook"><i class="icon-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="icon-instagram"></i></a>
-                            <a href="#" class="linkedin"><i class="icon-linkedin"></i></a>
+                            <a href="https://www.facebook.com/thychacreatives" class="facebook"><i class="icon-facebook"></i></a>
+                            <a href="https://www.instagram.com/thycha_creatives/" class="instagram"><i class="icon-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/thycha-creatives/" class="linkedin"><i class="icon-linkedin"></i></a>
                         </div>
 
                     </ul>
@@ -98,4 +99,3 @@
 
     </div>
 </footer>
-<!-- End Footer -->

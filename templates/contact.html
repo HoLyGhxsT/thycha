@@ -35,7 +35,7 @@
 
                 <div class="row mt-5">
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 contact-address">
                         <div class="info">
                             <div class="address">
                                 <i class="icon-map-marker"></i>
@@ -48,7 +48,7 @@
                                 <i class="icon-time"></i>
                                 <h4>Open Hours:</h4>
                                 <p>
-                                    Monday-Sunday:<br> 24 Hours
+                                    Monday-Sunday:<br> 9:00 AM - 9:00 PM
                                 </p>
                             </div>
 
@@ -71,7 +71,7 @@
 
                     <div class="col-lg-8 mt-5 mt-lg-0">
 
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <form action="" id="id_contact_form" method="post" role="form" class="php-email-form">
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name"
@@ -89,8 +89,8 @@
                                         placeholder="Company Name" required>
                                 </div>
                                 <div class="col-md-6 form-group mt-3 ">
-                                    <input type="tel" class="form-control" name="email" id="email"
-                                        placeholder="Phone " required>
+                                    <input type="tel" class="form-control" name="email" id="email" placeholder="Phone "
+                                        required>
                                 </div>
 
                             </div>
@@ -105,10 +105,11 @@
                             </div>
                             <div class="my-3">
                                 <div class="loading ">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message ">Your message has been sent. Thank you!</div>
+                                <!-- <div class="error-message">Service temporarily Down, Please Use WhatsApp for contacting us</div>
+                                <div class="sent-message ">Your message has been sent. Thank you!</div> -->
                             </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
+                            <div class="text-center"><button id="id_send_contact_form" type="submit">Send
+                                    Message</button></div>
                         </form>
 
                     </div>
@@ -138,32 +139,34 @@
 {% csrf_token %}
 {% endblock pagecontent %}
 {% block extra_script %}
-<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-  $('#id_send_contact_form').on('click',function(e){
-    e.preventDefault()
-    console.log($('#id_contact_form').serialize())
-    $.ajax({
-        url:"",
-        data:$('#id_contact_form').serialize(),
-        method:"post",
-        success:function (response){
-            swal({
-                title: "Good job!",
-                text: "The form has been submitted",
-                icon: "success",
-                button: "Ok",
-            });
-            $('#id_contact_form')[0].reset();
-        },
-        error:function (err){
-            alert("Something Error")
+    $('#id_send_contact_form').on('click', function (e) {
+        e.preventDefault()
+        console.log('click');
+        console.log($('#id_contact_form').serialize())
+        // $.ajax({
+        //     url:"",
+        //     data:$('#id_contact_form').serialize(),
+        //     method:"post",
+        //     success:function (response){
+        //         // swal({
+        //         //     title: "Good job!",
+        //         //     text: "The form has been submitted",
+        //         //     icon: "success",
+        //         //     button: "Ok",
+        //         // });
+        //         alert("Service temporarily Down, Please Use WhatsApp for contacting us")
+        //         $('#id_contact_form')[0].reset();
+        //     },
+        //     error:function (err){
+        //         alert("Something Error")
 
-        }
+        //     }
+        // })
+        // alert("Service temporarily Down, Please Use WhatsApp for contacting us")
     })
-    
-})
-</script> -->
+</script>
 
 {% endblock extra_script %}
