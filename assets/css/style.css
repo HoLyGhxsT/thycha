@@ -1963,6 +1963,41 @@ section {
 }
 
 /*--------------------------------------------------------------
+#  clientframe Greyscale
+--------------------------------------------------------------*/
+.clientframe {
+  background: url(../images/clients/clientframe.gif);
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 130px !important;
+  height: 100px !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .clientframe {
+      width: 117px !important;
+      height: 82px !important;
+      margin: 0 auto;
+      padding: 10px;
+  }
+}
+
+.clientframe:hover {
+  background-position: center bottom !important;
+}
+
+.clientframe img {
+  filter: grayscale(10%);
+  -webkit-filter: grayscale(100%);
+}
+
+.clientframe:hover img {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+/*--------------------------------------------------------------
 # Our Team
 --------------------------------------------------------------*/
 .card-pink {
