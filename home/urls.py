@@ -9,5 +9,6 @@ urlpatterns = [
     path('more/', MoreView.as_view(),name="more"),
     path('team/', OurTeamPageView.as_view(),name="team"),
     path('contact-us/', ContactPageView.as_view(),name="contact-us"),
+    # path('contact-us/', views.ContactPageView, name="contact-us"),
     path('about/', AboutPageView.as_view(),name="about"),
 ]

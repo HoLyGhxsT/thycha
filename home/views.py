@@ -1,8 +1,9 @@
-from django.http import JsonResponse
+from django.http import HttpResponseRedirect, JsonResponse
+from django.shortcuts import render
 from django.views.generic import TemplateView,View
 from .models import (PortfolioMaster)
-from django.template.loader import render_to_string
-from django.shortcuts import render
+from django.core.mail import send_mail
+from django.contrib import messages
 
 # Create your views here.
 class HomePageView(TemplateView):
@@ -18,7 +19,46 @@ class ContactPageView(TemplateView):
         context = super().get_context_data(**kwargs)
         
         return context
-    
+# def ContactPageView(request):
+#     if request.method == 'POST':
+#         name = request.POST.get('name')
+#         email = request.POST.get('email')
+#         c_name = request.POST.get('c-name')
+#         telno = request.POST.get('telno')
+#         subject = request.POST.get('subject')
+#         messageContent = request.POST.get('message')
+        
+#         data = {
+#             'name': name,
+#             'email': email,
+#             'c_name': c_name,
+#             'telno': telno,
+#             'subject': subject,
+#             'message': messageContent
+#         }
+        
+#         print(data)
+#         message = '''
+#         Message: {}
+
+#         From: {}
+#         Name: {}
+#         Company Name: {}
+#         Contact No.: {}
+
+#         '''.format(data['message'],data['email'],data['name'],data['c_name'],data['telno'])
+#         try:
+#             if(send_mail(data['subject'], message, '', ['faketest4410@gmail.com'])):
+#                 messages.success(request, 'Thanks for contacting! We will get in touch with you soon')
+#                 data = {}
+#             else:
+#                 messages.success(request, 'Not Allowed')
+#             # return render(request, 'contact.html', context={messages})
+#             return HttpResponseRedirect('/contact-us')
+#         except:
+#             messages.success(request, 'Something Went Wrong!, Please try again after sometime or use whatsapp')
+#         data = {}
+#     return render(request, "contact.html", {})
 class AboutPageView(TemplateView):
     template_name = "about.html"
     def get_context_data(self, *args, **kwargs):
